@@ -7,7 +7,8 @@ TravelPeek
 
 3–5 повноцінних сторінок: головна, країни, країна → міста, галерея, про нас, контакти.
 
-Семантичні елементи: <header>, <nav>, <main>, <footer>.
+Семантичні елементи:<img width="396" height="30" alt="image" src="https://github.com/user-attachments/assets/36dd64ef-5266-4fdd-95a1-6d24392c0bbd" />
+
 
 Навігація між сторінками та параметри URL (?country=…&city=…).
 
@@ -21,31 +22,11 @@ TravelPeek
 
 Структура проєкту
 TravelPeek/
-├─ index.html
-├─ countries.html
-├─ country.html
-├─ gallery.html
-├─ about.html
-├─ contacts.html
-├─ login.html
-├─ register.html
-├─ profile.html
-├─ upload.html          # завантаження фото користувачами
-├─ admin.html           # модерація (для ролі admin)
-├─ css/
-│  └─ styles.css
-├─ js/
-│  ├─ main.js           # дрібні скрипти/UX
-│  ├─ country.js        # список міст для країни
-│  ├─ gallery.js        # побудова галереї
-│  ├─ auth.js           # авторизація/ролі (localStorage)
-│  └─ moderation.js     # черга завантажень і схвалення
-└─ images/
-   └─ ...               # оптимізовані зображення (.jpg/.webp, alt-тексти)
+<img width="1638" height="638" alt="image" src="https://github.com/user-attachments/assets/5dfe95d3-215a-4a07-b3ce-0c819563727b" />
 
 Технології
 
-HTML5, CSS3 (Grid/Flex), JavaScript (ES6). Без бекенда; дані для демо зберігаються у localStorage.
+HTML5, CSS3 (Grid/Flex), JavaScript. Без бекенда; дані для демо зберігаються у localStorage.
 
 Виконала:
 Ревенко Ірина КА-32
