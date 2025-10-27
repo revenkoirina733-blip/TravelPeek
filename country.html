@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сторінка країни — TravelPeek</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="countries.html">Країни</a>
+      <a href="about.html">Про нас</a>
+      <a href="contacts.html">Контакти</a>
+      <span id="auth-nav"></span>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 id="country-title">Країна</h1>
+
+<section aria-labelledby="cities-heading">
+  <h2 id="cities-heading" class="sr-only">Міста країни</h2>
+  <div id="city-list" class="grid"></div>   
+</section>
+  </main>
+
+  <footer><p>© 2025 TravelPeek</p></footer>
+  <script src="./js/auth.js" defer></script>
+  <script src="./js/country.js" defer></script>
+</body>
+</html>

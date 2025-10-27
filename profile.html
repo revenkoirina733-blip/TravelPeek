@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Профіль — TravelPeek</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    .profile { display:grid; grid-template-columns: 220px 1fr; gap:1rem; }
+    .profile-nav a { display:block; padding:.6rem .8rem; border-radius:.6rem; text-decoration:none; color:#0d1b8a; }
+    .profile-nav a.active, .profile-nav a:hover { background:#e8eefc; }
+    .section { display:none; }
+    .section.active { display:block; }
+    .grid-cards { display:grid; gap:12px; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); }
+    .card { border:1px solid #e6e8f0; border-radius:12px; overflow:hidden; background:#fff; }
+    .card img { width:100%; aspect-ratio:1/1; object-fit:cover; display:block; }
+    .p { padding:.7rem .9rem; }
+    .form { display:grid; gap:12px; max-width:420px; }
+    .form input { padding:.7rem 1rem; border:1px solid #d1d5db; border-radius:.6rem; }
+    .btn { display:inline-block; padding:.6rem .9rem; border-radius:.6rem; background:#1565C0; color:#fff; text-decoration:none; border:0; cursor:pointer; }
+    .btn.secondary { background:#F36F21; }
+    .hint { color:#6b7280; font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="countries.html">Країни</a>
+      <a href="about.html">Про нас</a>
+      <a href="contacts.html">Контакти</a>
+      <span id="auth-nav"></span>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Профіль</h1>
+    <p><strong>Ім’я:</strong> <span id="profile-name"></span></p>
+    <p><strong>Ел. пошта:</strong> <span id="profile-email"></span></p>
+
+    <div class="profile">
+      
+      <aside class="profile-nav">
+        <a href="#" data-tab="photos" class="active">Мої фото</a>
+        <a href="#" data-tab="wish">Обране “Хочу туди”</a>
+        <a href="#" data-tab="settings">Налаштування</a>
+      </aside>
+
+      
+      <section class="profile-content">
+        
+        <div id="tab-photos" class="section active">
+          <h2>Мої фото</h2>
+          <form id="add-photo" class="form">
+            <input type="text" name="src" placeholder="Шлях до зображення, напр. ./images/odesa-opera.jpg" required>
+            <input type="text" name="caption" placeholder="Підпис до фото" required>
+            <button class="btn" type="submit">Додати фото</button>
+          </form>
+          <div id="my-photos" class="grid-cards"></div>
+        </div>
+
+        <div id="tab-wish" class="section">
+          <h2>Обране “Хочу туди”</h2>
+          <form id="add-wish" class="form">
+            <input type="text" name="country" placeholder="Країна (напр. Україна)" required>
+            <input type="text" name="city" placeholder="Місто (напр. Одеса)" required>
+            <button class="btn" type="submit">Додати в обране</button>
+          </form>
+          <ul id="wish-list"></ul>
+        </div>
+
+        <div id="tab-settings" class="section">
+          <h2>Налаштування</h2>
+          <form id="settings-form" class="form">
+            <input type="text" name="name" placeholder="Нове ім’я">
+            <input type="password" name="password" placeholder="Новий пароль (мін. 6)" minlength="6">
+            <button class="btn secondary" type="submit">Зберегти зміни</button>
+          </form>
+          <button class="btn" onclick="logout()">Вийти з акаунта</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer><p>© 2025 TravelPeek</p></footer>
+  <script src="./js/auth.js" defer></script>
+  <script src="./js/profile.js" defer></script>
+</body>
+</html>
