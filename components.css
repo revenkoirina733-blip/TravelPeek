@@ -1,0 +1,25 @@
+/* Картки */
+.card{background:#fff; border:1px solid #e6e8f0; border-radius:var(--radius); overflow:hidden;
+      box-shadow:0 3px 8px rgba(0,0,0,.06)}
+.card img{width:100%; aspect-ratio:1/1; object-fit:cover; display:block}
+.card .p{padding:.75rem 1rem}
+
+/* Кнопки */
+.btn{display:inline-block; padding:.7rem 1rem; border-radius:10px; font-weight:600; border:0; cursor:pointer}
+.btn-primary{background:var(--accent); color:#fff}
+.btn-secondary{background:#1565C0; color:#fff}
+.btn:disabled{opacity:.6; cursor:not-allowed}
+
+/* Форми */
+.form{display:grid; gap:12px; max-width:460px}
+.form label{font-weight:600; display:grid; gap:.35rem}
+.form input,.form textarea, .form select{
+  width:100%; padding:.75rem 1rem; border:1px solid #d1d5db; border-radius:10px; background:#fff
+}
+.form input:focus, .form textarea:focus{outline:2px solid #cfe1ff; border-color:#9dbdff}
+
+/* Валідація (HTML5 + CSS) */
+:required:invalid{border-color:#ef4444}
+:required:invalid:focus{outline:2px solid #fecaca}
+.error{color:#b91c1c; font-size:.9rem}
+.hint{color:var(--muted); font-size:.95rem}
