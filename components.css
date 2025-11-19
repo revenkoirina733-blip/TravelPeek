@@ -18,8 +18,28 @@
 }
 .form input:focus, .form textarea:focus{outline:2px solid #cfe1ff; border-color:#9dbdff}
 
+/* Текст помилки під полем */
+.error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* Стан помилки для інпутів/textarea */
+input:invalid,
+textarea:invalid {
+  border-color: #ef4444;
+}
+
+/* При фокусі на невалідному полі */
+input:invalid:focus,
+textarea:invalid:focus {
+  outline: 2px solid #fecaca;
+}
+
 /* Валідація (HTML5 + CSS) */
 :required:invalid{border-color:#ef4444}
 :required:invalid:focus{outline:2px solid #fecaca}
 .error{color:#b91c1c; font-size:.9rem}
 .hint{color:var(--muted); font-size:.95rem}
+
