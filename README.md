@@ -22,8 +22,8 @@ TravelPeek
 
 Структура проєкту
 TravelPeek/
-<img width="1638" height="638" alt="image" src="https://github.com/user-attachments/assets/5dfe95d3-215a-4a07-b3ce-0c819563727b" />
-<img width="236" height="707" alt="image" src="https://github.com/user-attachments/assets/9ba4687f-398b-4a9f-b8c2-e84e42b2d962" />
+
+<img width="200" height="600" alt="image" src="https://github.com/user-attachments/assets/9ba4687f-398b-4a9f-b8c2-e84e42b2d962" />
 
 
 Застосовані технології
