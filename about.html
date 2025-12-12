@@ -6,6 +6,7 @@
   <title>TravelPeek — Головна</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
   <header>
     <nav id="topnav">
@@ -16,6 +17,8 @@
     <a href="about.html">Про нас</a>
     <a href="contacts.html">Контакти</a>
     <span id="auth-nav"></span>
+
+    <button type="button" class="btn btn-secondary" data-action="toggle-theme">Змінити тему</button>
   </div>
 </nav>
   </header>
@@ -25,11 +28,18 @@
   <p>TravelPeek — це сайт, який допомагає людям знаходити натхнення для подорожей через фото з різних країн та міст.</p>
   <h2>Мета</h2>
   <p>Надихати користувачів відкривати світ через досвід інших мандрівників.</p>
+  <button type="button" class="btn" data-toggle="more">Показати більше</button>
+
+<div class="hidden" data-block="more">
+  <p>TravelPeek — навчальний проєкт для демонстрації HTML/CSS/JS: навігація, галереї, авторизація, localStorage.</p>
+</div>
+
 </main>
 
   <footer>
-    <p>© 2025 TravelPeek</p>
+   <p> © <span data-year>2025</span> TravelPeek <p>
   </footer>
+<script src="./js/main.js" defer></script>
 <script src="./js/auth.js" defer></script>
 </body>
 </html>
